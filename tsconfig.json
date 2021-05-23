@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "target": "es2017", // For native async/await - support matrix on https://caniuse.com/async-functions
+        "lib": [
+            // Choosing a minimal set of libraries to reduce number of required polyfills.
+            "DOM", // Browser-specific APIs
+            "ES5", // Supported in all target browsers - cf. http://kangax.github.io/compat-table/es5/
+            "ES2015.Promise", // Required for async/await
+        ],
+        "outDir": "out/modern",
+        "strict": true,
+    },
+    "include": [
+        "src/**/*.ts",
+    ],
+}

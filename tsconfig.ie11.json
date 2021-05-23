@@ -1,0 +1,7 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "target": "es5", // IE11 does not support any ES2015 features or syntax.
+        "outDir": "out/ie11",
+    },
+}
